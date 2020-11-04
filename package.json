@@ -1,0 +1,37 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "./src/index.js",
+  "scripts": {
+    "serve": "webpack serve --config webpack.dev.js",
+    "prod": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^5.0.0",
+    "eslint": "^7.12.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^7.1.0",
+    "sass": "^1.28.0",
+    "sass-loader": "^10.0.4",
+    "vue-loader": "^15.9.4",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
