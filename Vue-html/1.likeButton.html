@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <meta property="og:title" content="이름" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="설명" />
+  <meta property="og:image" content="이미지">
+  <meta property="og:url" content="주소" />
+  <meta property="og:locale" content="ko_KR" />
+  
+  <!-- 메타 태그 -->
+  <meta name="title" content="프로젝트이름" />
+  <meta name="description" content="설명" />
+  <meta name="keywords" content="키워드" />
+  <meta name="Subject" content="프로젝트이름"/>
+  <meta name="author" content="NIHILncunia"/>
+  <meta name="writer" content="NIHILncunia"/>
+  <meta name="copyright" content="© NIHILncunia"/>
+  
+  <!-- <link rel="shortcut icon" href="아이콘 주소" type="image/x-icon" /> -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <title>좋아요 누르기</title>
+</head>
+<body>
+  <div id="root">
+    <div v-if="liked">좋아요 눌렀음.</div>
+    <button v-else v-on:click="onClickButton">좋아요</button>
+  </div>
+</body>
+<script>
+  const app = new Vue({
+    el: '#root',
+    data: {
+      liked: false,
+    },
+    methods: {
+      onClickButton() {
+        this.liked = true;
+      }
+    },
+  });
+</script>
+</html>

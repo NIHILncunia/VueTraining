@@ -1,4 +1,6 @@
 import Vue from 'vue';
-import App from './App';
+// import NumberBaseBall from './NumberBaseBall';
+// import ResponseCheck from './ResponseCheck';
+import RockScissorsPaper from './RockScissorsPaper';
 
-new Vue({ render: el => el(App) }).$mount('#root');
+new Vue({ render: createElement => createElement(RockScissorsPaper) }).$mount('#root');
