@@ -4,32 +4,43 @@
 
 <script>
 export default {
-  // 이름
   name: '',
-  // 컴포넌트
-  components: {},
-  // 프롭스
-  props: {},
-  // 데이터
+  components: {
+    // 컴포넌트
+  },
+  props: {
+    // 프롭스
+  },
   data() {
+    // 데이터
     return {};
   },
-  // 가공된 데이터
-  computed: {},
-  // 생명주기 - 생성
+  computed: {
+    // 가공된 데이터
+  },
+  watch: {
+    // 데이터 감시
+  },
+  
   beforeCreate() {},
-  created() {},
-  // 생명주기 - 렌더링
+  created() {
+    // 생명주기 - 생성
+  },
   beforeMount() {},
-  mounted() {},
-  // 생명주기 - 리렌더링
+  mounted() {
+    // 생명주기 - 렌더링
+  },
   beforeUpdate() {},
-  updated() {},
-  // 생명주기 - 소멸
+  updated() {
+    // 생명주기 - 리렌더링
+  },
   beforeDestroy() {},
-  destroyed() {},
-  // 메소드
-  methods: {},
+  destroyed() {
+    // 생명주기 - 소멸
+  },
+  methods: {
+    // 메소드
+  },
 };
 </script>
 
